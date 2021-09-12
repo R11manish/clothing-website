@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+
 import CustomButton from '../custom-button/custom-button.component';
 import { CartContext } from '../../providers/cart/cart.provider';
 
@@ -13,7 +14,7 @@ const CollectionItem = ({ item }) => {
       <div
         className='image'
         style={{
-          backgroundImage: `url(${imageUrl})`,
+          backgroundImage: `url(${imageUrl})`
         }}
       />
       <div className='collection-footer'>

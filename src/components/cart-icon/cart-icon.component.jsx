@@ -8,7 +8,6 @@ import './cart-icon.styles.scss';
 
 const CartIcon = ({ itemCount }) => {
   const { toggleHidden, cartItemsCount } = useContext(CartContext);
-
   return (
     <div className='cart-icon' onClick={toggleHidden}>
       <ShoppingIcon className='shopping-icon' />

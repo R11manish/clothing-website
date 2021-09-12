@@ -9,11 +9,12 @@ import './cart-dropdown.styles.scss';
 
 const CartDropdown = ({ history }) => {
   const { cartItems, toggleHidden } = useContext(CartContext);
+
   return (
     <div className='cart-dropdown'>
       <div className='cart-items'>
         {cartItems.length ? (
-          cartItems.map((cartItem) => (
+          cartItems.map(cartItem => (
             <CartItem key={cartItem.id} item={cartItem} />
           ))
         ) : (
